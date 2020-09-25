@@ -109,14 +109,3 @@ myPenguin.volar();
 //     cada libro imprime el titulo y autor, junto con su 
 //     status de lectura (si ya ha sido leído, o no).
 // -------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-

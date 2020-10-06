@@ -1,0 +1,4 @@
+
+class Pelicula extends Largometraje {
+
+}

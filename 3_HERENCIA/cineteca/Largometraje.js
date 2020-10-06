@@ -1,9 +1,12 @@
 class Largometraje {
-    constructor(titulo, duración) {
+    constructor(titulo, duración, director, actores, procedencia) {
         this.titulo = titulo;
         this.duración = duración;
+        this.director = director;
+        this.actores = actores;
+        this.procedencia = procedencia;
     }
-    mostrarMensaje() {
+    producir() {
         console.log('holi');
     }
 }

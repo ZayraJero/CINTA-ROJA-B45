@@ -30,7 +30,24 @@ obtenerPokemon(1);
 //         http://openlibrary.org/search.json?author=asimov
 // 4.- Hacer una petición y devolver el género de la banda deseada
 //     http://www.theaudiodb.com/api/v1/json/1/search.php?s=muse
-// 5.- Hacer una petición a la swapi a un personaje y obtener 
+
+let traerGenero = (banda) => {
+    const URL_BASE = 'http://www.theaudiodb.com/api/v1/json/1/search.php?s=';
+
+    request(`${URL_BASE}${banda}`, (error, respuesta, body) => {
+        let resultados = JSON.parse(body);
+        if (res.statusCode === 200) {
+            let resultados = JSON.parse(body);
+            console.log(resultados.artists[0].strGenre);
+
+        } else {
+            console.log('error en la busqueda');
+        }
+    })
+
+}
+traerGenero('shakira');
+// 5.- Hacer una petición a la swapi a un personaje y obtener
 //     sus películas.
 //                     https://swapi.co/
 // 6.- Devolver los asteroides que sean potencialmente peligrosos
